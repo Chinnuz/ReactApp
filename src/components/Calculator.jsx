@@ -1,6 +1,6 @@
 import React from "react";
 import TemperatureInput from "./TemperatureInput";
-
+import Converter from "./Converter";
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
@@ -37,6 +37,7 @@ class Calculator extends React.Component {
     return (
       <>
         <h1>Temperature Convertor</h1>
+        <Converter scale={this.state.scale} />
         Celcius :
         <TemperatureInput
           scale="c"
